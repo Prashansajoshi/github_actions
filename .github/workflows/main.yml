@@ -1,0 +1,17 @@
+name: CI/CD for node Todo 
+
+on: push
+
+jobs:
+  # Build Job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node --version
+      - run: npm --version
+
+
+    #   - name: Install Node
+    #     uses: actions/setup-node@v3
+    #     with:
+    #       node-version: 18.x
